@@ -38,5 +38,13 @@ def autoCheck():
               autoCheck()
 autoCheck()
 myClass()
+os.system("""
+cd ~/AnnaUniversity
+git pull
+cp ~/PycharmProjects/URL_Test/7thSem_Results.txt 7thSem_Results.txt &&
+
+git add . &&
+git commit . -m "log_test" &&
+git push --repo https://rajasyed:'payoda8080'@github.com/rajasyed/AnnaUniversity.git""")
 #os.system("ls")
 print "ended"
